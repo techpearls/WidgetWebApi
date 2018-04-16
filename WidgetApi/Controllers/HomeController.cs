@@ -47,6 +47,7 @@ namespace WebApplication3.Controllers
         [HttpPut]
         public IHttpActionResult Update(Widget w)
         {
+            // more comments
             var widget = widgets.Where(d => d.Id == w.Id).FirstOrDefault();
             if(widget == null)
             {
